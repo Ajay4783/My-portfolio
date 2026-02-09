@@ -70,7 +70,7 @@ const Contact = () => {
             </div>
           </a>
 
-          <a href="https://github.com/ajay4783" target="_blank" rel="noopener noreferrer" className="text-decoration-none">
+          <a href="https://github.com/Ajay4783" target="_blank" rel="noopener noreferrer" className="text-decoration-none">
             <div className="d-flex align-items-center mb-4">
               <i className="bi bi-github fs-4 text-primary me-3"></i>
               <span className="text-light">GitHub Profile</span>
