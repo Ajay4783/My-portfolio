@@ -47,19 +47,35 @@ const Contact = () => {
             I am available for freelance work or full-time opportunities. 
             Connect with me via email or social media.
           </p>
-          
-          <div className="d-flex align-items-center mb-3">
-            <i className="bi bi-envelope-fill fs-4 text-primary me-3"></i>
-            <span className="text-light">ajayajay2005vi@gmail.com</span>
-          </div>
-          <div className="d-flex align-items-center mb-3">
-            <i className="bi bi-linkedin fs-4 text-primary me-3"></i>
-            <span className="text-light">LinkedIn Profile</span>
-          </div>
-          <div className="d-flex align-items-center mb-4">
-            <i className="bi bi-github fs-4 text-primary me-3"></i>
-            <span className="text-light">GitHub Profile</span>
-          </div>
+
+
+         {/* Gmail Direct Link (100% Working) */}
+          <a 
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=ajayajay2005vi@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-decoration-none"
+            style={{ position: 'relative', zIndex: 100, cursor: 'pointer' }}
+          >
+            <div className="d-flex align-items-center mb-3">
+              <i className="bi bi-envelope-fill fs-4 text-primary me-3"></i>
+              <span className="text-light">ajayajay2005vi@gmail.com</span>
+            </div>
+          </a>
+    
+          <a href="https://www.linkedin.com/in/ajay-python" target="_blank" rel="noopener noreferrer" className="text-decoration-none">
+            <div className="d-flex align-items-center mb-3">
+              <i className="bi bi-linkedin fs-4 text-primary me-3"></i>
+              <span className="text-light">LinkedIn Profile</span>
+            </div>
+          </a>
+
+          <a href="https://github.com/ajay" target="_blank" rel="noopener noreferrer" className="text-decoration-none">
+            <div className="d-flex align-items-center mb-4">
+              <i className="bi bi-github fs-4 text-primary me-3"></i>
+              <span className="text-light">GitHub Profile</span>
+            </div>
+          </a>
 
           {/* ✨ Animation ✨ */}
           <div className="mt-5" style={{ marginLeft: '-180px' }}>

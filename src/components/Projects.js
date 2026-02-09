@@ -51,7 +51,7 @@ const Projects = () => {
                 </div>
 
                 <div className="d-flex gap-2">
-                  <a href="#" className="btn btn-outline-light btn-sm">GitHub Code</a>
+                  <a href="/" className="btn btn-outline-light btn-sm">GitHub Code</a>
                 </div>
               </div>
             </div>
@@ -84,7 +84,7 @@ const Projects = () => {
                 </div>
 
                 <div className="d-flex gap-2">
-                  <a href="#" className="btn btn-outline-light btn-sm">GitHub Code</a>
+                  <a href="https://ajay-gold-price-tracker.streamlit.app/" className="btn btn-outline-light btn-sm">GitHub Code</a>
                 </div>
               </div>
             </div>

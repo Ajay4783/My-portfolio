@@ -19,7 +19,7 @@ const Hero = () => {
             I am a{' '}
             <span style={{ color: '#00d2ff', fontWeight: 'bold' }}>
               <Typewriter
-                words={['Full Stack Developer', 'Python Enthusiast', 'React Developer']}
+                words={['Python Full Stack Developer', 'Django Specialist', 'React.js Developer']}
                 loop={true}
                 cursor
                 cursorStyle='|'
@@ -30,10 +30,9 @@ const Hero = () => {
             </span>
           </h3>
 
-          <p className="lead text-light">
-            Specializing in <strong>Python, Django, and React JS</strong>.
-            I build scalable web applications and e-commerce solutions.
-          </p>
+         <p className="text-light opacity-50 mt-4 lead" style={{ maxWidth: '600px' }}>
+           Result-oriented developer based in Tirupur. I architect secure, scalable web solutions using Django & React.
+         </p>
 
           <div className="mt-4">
             <a href="#contact" className="btn btn-primary btn-lg me-3 shadow">Hire Me</a>
