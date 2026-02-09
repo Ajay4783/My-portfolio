@@ -1,13 +1,80 @@
+/* 1. Google Font (Poppins - Clean & Modern) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* 2. Body - Deep Blue/Black Gradient (Not Flashy, Very Professional) */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Deep Sea Blue */
+  background-attachment: fixed; /* ஸ்க்ரோல் பண்ணாலும் பின்னணி நகராது */
+  color: #e0e0e0; /* எழுத்துக்கள் வெள்ளை/சாம்பல் நிறத்தில் இருக்கும் */
+  min-height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* 3. Headings (Gold/Cyan Glow) */
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+
+.text-primary {
+  color: #00d2ff !important; /* அழகான நியான் ப்ளூ */
+}
+
+/* 4. Glassmorphism Cards (Dark Glass Effect) - மிக முக்கியம்! */
+.card, .navbar, .form-control {
+  background: rgba(255, 255, 255, 0.05) !important; /* மிகவும் லேசான கண்ணாடி */
+  backdrop-filter: blur(10px); /* பின்னாடி மங்கலா தெரியும் */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* மெல்லிய பார்டர் */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  color: white !important; /* கார்டுக்குள் இருக்கும் எழுத்துக்கள் வெள்ளை */
+}
+
+/* 5. Inputs (Contact Form) */
+input, textarea {
+  background: rgba(0, 0, 0, 0.2) !important;
+  color: white !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+input::placeholder, textarea::placeholder {
+  color: #bbb !important;
+}
+
+/* 6. Buttons (Neon Glow) */
+.btn-primary {
+  background: linear-gradient(45deg, #00d2ff, #3a7bd5);
+  border: none;
+  font-weight: 600;
+  color: white;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px #00d2ff; /* நியான் வெளிச்சம் */
+}
+
+.btn-outline-dark {
+  color: white;
+  border-color: white;
+}
+.btn-outline-dark:hover {
+  background: white;
+  color: black;
+}
+
+/* 7. Scrollbar (Dark Style) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #1a1a1a; 
+}
+::-webkit-scrollbar-thumb {
+  background: #3a7bd5; 
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00d2ff; 
 }
