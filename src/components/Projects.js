@@ -35,7 +35,7 @@ const Projects = () => {
                 alt="E-commerce Project"
                 style={{ height: '250px', objectFit: 'cover' }} 
               />
-              <div className="card-body">
+              <div className="card-body d-flex flex-column">
                 <h4 className="card-title fw-bold text-light">Multi-Category E-Commerce Site</h4>
                 <p className="card-text text-light opacity-75">
                   A fully functional e-commerce platform built with <strong>Django</strong>. 
@@ -43,15 +43,21 @@ const Projects = () => {
                   and payment integration.
                 </p>
                 
-                <div className="mb-3">
+                <div className="mb-4">
                   <span className="badge bg-primary me-2">Python</span>
                   <span className="badge bg-success me-2">Django</span>
                   <span className="badge bg-info me-2">Bootstrap</span>
                   <span className="badge bg-warning text-dark me-2">MySQL</span>
                 </div>
 
-                <div className="d-flex gap-2">
-                  <a href="/" className="btn btn-outline-light btn-sm">GitHub Code</a>
+                {/* E-Commerce Buttons */}
+                <div className="d-flex gap-2 mt-auto">
+                  <a href="Ajay4783.pythonanywhere.com" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm">
+                    Live Demo
+                  </a>
+                  <a href="https://github.com/Ajay4783/Flipkart-Ecommerce" target="_blank" rel="noopener noreferrer" className="btn btn-outline-light btn-sm">
+                    GitHub Code
+                  </a>
                 </div>
               </div>
             </div>
@@ -68,7 +74,7 @@ const Projects = () => {
                 alt="Gold Price Prediction" 
                 style={{ height: '250px', objectFit: 'cover' }}
               />
-              <div className="card-body">
+              <div className="card-body d-flex flex-column">
                 <h4 className="card-title fw-bold text-light">Gold Price Prediction Model</h4>
                 <p className="card-text text-light opacity-75">
                   A Machine Learning model to predict gold prices based on historical data. 
@@ -76,15 +82,21 @@ const Projects = () => {
                   and provide accurate price forecasting.
                 </p>
                 
-                <div className="mb-3">
+                <div className="mb-4">
                   <span className="badge bg-primary me-2">Python</span>
                   <span className="badge bg-warning text-dark me-2">ML</span>
                   <span className="badge bg-secondary me-2">Pandas</span>
                   <span className="badge bg-dark border border-light me-2">Scikit-Learn</span>
                 </div>
 
-                <div className="d-flex gap-2">
-                  <a href="https://ajay-gold-price-tracker.streamlit.app/" className="btn btn-outline-light btn-sm">GitHub Code</a>
+                {/* Gold Project Buttons */}
+                <div className="d-flex gap-2 mt-auto">
+                  <a href="https://ajay-gold-price-tracker.streamlit.app/" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm">
+                    Live Demo
+                  </a>
+                  <a href="https://github.com/Ajay4783/ajay-gold-bot" target="_blank" rel="noopener noreferrer" className="btn btn-outline-light btn-sm">
+                    GitHub Code
+                  </a>
                 </div>
               </div>
             </div>
