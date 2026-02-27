@@ -30,7 +30,7 @@ function App() {
 
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
-    setTimeout(() => setLoading(false), 4500); 
+    setTimeout(() => setLoading(false), 4800); 
   }, []);
 
 if (loading) {
@@ -45,7 +45,7 @@ if (loading) {
         <h4 className="mt-4 fw-bold text-center" style={{ color: '#00d2ff', fontFamily: 'monospace', fontSize: '1.5rem' }}>
           <span>&gt; </span> 
           <Typewriter
-            words={['INITIALIZING...', 'WELCOME AJAY...']}
+            words={['INITIALIZING...', 'WELCOME TO AJAY\'S WORLD...']}
             loop={1}
             cursor
             cursorStyle='_'
