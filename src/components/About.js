@@ -11,7 +11,6 @@ const About = () => {
           
           <div className="row align-items-center">
             
-            {/* Left Side: About Description */}
             <div className="col-md-7" data-aos="fade-right">
               <h4 className="fw-bold text-primary">Who am I?</h4>
               <p className="lead text-light mt-3">
@@ -29,18 +28,15 @@ const About = () => {
               </p>
             </div>
 
-            {/* Right Side: Education Card Container */}
-            {/* மாற்றம் 1: இங்கே 'position-relative' சேர்த்துள்ளேன் */}
             <div className="col-md-5 mt-5 mt-md-0 position-relative" data-aos="fade-left">
               
-              {/* ✨ Rocket Animation (Floating) ✨ */}
-              {/* மாற்றம் 2: இது இப்போ தனி இடத்தில் மிதக்கும், கார்டை தள்ளாது */}
+              
               <div style={{ 
                   position: 'absolute', 
-                  top: '100px',  // கார்டுக்கு மேலே கொண்டு செல்ல
-                  right: '30px', // வலது பக்கம் ஒட்ட வைக்க
+                  top: '100px',  
+                  right: '30px', 
                   width: '150px',
-                  zIndex: 1 // கார்டுக்கு முன்னாடி தெரியணும்
+                  zIndex: 1 
               }}>
                 <Lottie 
                     animationData={rocketAnimation} 
@@ -48,7 +44,6 @@ const About = () => {
                 />
               </div>
 
-              {/* Education Card */}
               <div className="card shadow border-0 p-4">
                 <h4 className="fw-bold text-light mb-3">Education & Details</h4>
                 <ul className="list-unstyled">

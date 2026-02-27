@@ -14,7 +14,7 @@ const ParticlesBackground = () => {
       options={{
         background: {
           color: {
-            value: "transparent", // ஏற்கனவே உள்ள Gradient தெரியணும், அதனால Transparent
+            value: "transparent", 
           },
         },
         fpsLimit: 120,
@@ -22,11 +22,11 @@ const ParticlesBackground = () => {
           events: {
             onHover: {
               enable: true,
-              mode: "repulse", // மவுஸ் கிட்ட போனா விலகிப் போகும்
+              mode: "repulse", 
             },
             onClick: {
               enable: true,
-              mode: "push", // கிளிக் பண்ணா புதுசா உருவாகும்
+              mode: "push", 
             },
           },
           modes: {
@@ -41,13 +41,13 @@ const ParticlesBackground = () => {
         },
         particles: {
           color: {
-            value: "#ffffff", // வெள்ளை நிற புள்ளிகள்
+            value: "#ffffff", 
           },
           links: {
             color: "#ffffff",
             distance: 150,
             enable: true,
-            opacity: 0.2, // மெல்லிய கோடுகள்
+            opacity: 0.2, 
             width: 1,
           },
           move: {
@@ -57,7 +57,7 @@ const ParticlesBackground = () => {
               default: "bounce",
             },
             random: false,
-            speed: 1.5, // மிதக்கும் வேகம்
+            speed: 1.5, 
             straight: false,
           },
           number: {
@@ -65,7 +65,7 @@ const ParticlesBackground = () => {
               enable: true,
               area: 800,
             },
-            value: 60, // மொத்த புள்ளிகளின் எண்ணிக்கை
+            value: 60, 
           },
           opacity: {
             value: 0.3,
@@ -85,7 +85,7 @@ const ParticlesBackground = () => {
         left: 0,
         width: '100%',
         height: '100%',
-        zIndex: -1 // இது மிக முக்கியம்! (எல்லாத்துக்கும் பின்னாடி இருக்கணும்)
+        zIndex: -1 
       }}
     />
   );

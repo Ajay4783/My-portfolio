@@ -1,7 +1,7 @@
 import React from 'react';
 import { Typewriter } from 'react-simple-typewriter';
-import Lottie from "lottie-react"; // Import Lottie
-import codingAnimation from "../space_boy_developer.json"; // Import Animation File
+import Lottie from "lottie-react"; 
+import codingAnimation from "../space_boy_developer.json";
 
 const Hero = () => {
   return (
@@ -40,13 +40,12 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Right Side: Animation with Transparent Background */}
         <div className="col-md-6 text-center mt-4 mt-md-0" data-aos="fade-left">
             <Lottie
                 animationData={codingAnimation}
                 loop={true}
                 className="img-fluid"
-                style={{ height: '400px', background: 'transparent' }} // ✅ பின்னணி நீக்கப்பட்டது
+                style={{ height: '400px', background: 'transparent' }}
             />
         </div>
 

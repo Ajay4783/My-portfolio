@@ -3,21 +3,22 @@ import { motion } from "framer-motion";
 import Lottie from "lottie-react";
 import skillsAnimation from "../Skills.json"; 
 
-// Icons
 import { VscVscode } from "react-icons/vsc"; 
 import { FaReact, FaHtml5, FaCss3Alt, FaBootstrap, FaJs, FaPython, FaGitAlt, FaGithub } from "react-icons/fa";
-import { SiDjango, SiMysql, SiSqlite, SiPostman } from "react-icons/si";
+import { SiDjango, SiMysql, SiSqlite, SiPostman, SiJquery, SiTypescript } from "react-icons/si";
+import { TbApi } from "react-icons/tb";
 
 const Skills = () => {
 
-  // Category wise Data
   const categories = [
     {
       title: "Frontend Development",
-      color: "#00d2ff", // Neon Blue
+      color: "#00d2ff",
       skills: [
         { name: "React JS", icon: <FaReact /> },
         { name: "JavaScript", icon: <FaJs /> },
+        { name: "TypeScript", icon: <SiTypescript /> },
+        { name: "jQuery", icon: <SiJquery /> },
         { name: "HTML5", icon: <FaHtml5 /> },
         { name: "CSS3", icon: <FaCss3Alt /> },
         { name: "Bootstrap", icon: <FaBootstrap /> },
@@ -25,17 +26,18 @@ const Skills = () => {
     },
     {
       title: "Backend Development",
-      color: "#00ff88", // Neon Green
+      color: "#00ff88",
       skills: [
         { name: "Python", icon: <FaPython /> },
         { name: "Django", icon: <SiDjango /> },
+        { name: "REST API", icon: <TbApi /> },
         { name: "MySQL", icon: <SiMysql /> },
         { name: "SQLite", icon: <SiSqlite /> },
       ]
     },
     {
       title: "Tools & Platforms",
-      color: "#ff0055", // Neon Red/Pink
+      color: "#ff0055",
       skills: [
         { name: "GitHub", icon: <FaGithub /> },
         { name: "Git", icon: <FaGitAlt /> },
@@ -48,7 +50,6 @@ const Skills = () => {
   return (
     <section id="skills" className="container py-5" style={{ minHeight: '100vh' }}>
       
-      {/* --- Heading --- */}
       <div className="d-flex justify-content-center align-items-center mb-5" data-aos="fade-down">
         <h2 className="fw-bold text-light m-0 display-5">Technical Proficiency</h2>
         <div style={{ width: '80px', marginLeft: '15px' }}> 
@@ -56,40 +57,34 @@ const Skills = () => {
         </div>
       </div>
 
-      {/* --- New Panel Design --- */}
       <div className="row justify-content-center">
         {categories.map((cat, index) => (
           <div key={index} className="col-lg-10 mb-5" data-aos="fade-up" data-aos-delay={index * 100}>
             
-            {/* Glass Panel */}
             <motion.div 
               whileHover={{ scale: 1.02 }}
               className="p-4 rounded-4 position-relative overflow-hidden"
               style={{
-                background: 'rgba(255, 255, 255, 0.03)', // Light Glass
+                background: 'rgba(255, 255, 255, 0.03)',
                 backdropFilter: 'blur(10px)',
                 border: '1px solid rgba(255, 255, 255, 0.1)',
                 boxShadow: '0 8px 32px 0 rgba(0, 0, 0, 0.37)'
               }}
             >
-              {/* Decorative Side Line */}
               <div style={{ position: 'absolute', top: 0, left: 0, width: '5px', height: '100%', background: cat.color }}></div>
 
               <div className="row align-items-center">
                 
-                {/* Category Title */}
                 <div className="col-md-4 mb-3 mb-md-0 border-end border-secondary">
                   <h3 className="fw-bold m-0" style={{ color: cat.color }}>{cat.title}</h3>
                   <p className="text-light opacity-50 m-0"><small>My core competency</small></p>
                 </div>
 
-                {/* Icons List */}
                 <div className="col-md-8">
                   <div className="d-flex flex-wrap gap-4 justify-content-center justify-content-md-start px-md-4">
                     {cat.skills.map((skill, i) => (
                       <div key={i} className="text-center group">
                         
-                        {/* Icon Circle */}
                         <motion.div 
                           whileHover={{ y: -5, color: cat.color }}
                           className="d-flex align-items-center justify-content-center rounded-circle mb-2"
@@ -105,7 +100,6 @@ const Skills = () => {
                           {skill.icon}
                         </motion.div>
                         
-                        {/* Name */}
                         <small className="text-light opacity-75">{skill.name}</small>
                       
                       </div>

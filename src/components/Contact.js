@@ -34,12 +34,10 @@ const Contact = () => {
   return (
     <section id="contact" className="container py-5">
       
-      {/* 1. Heading */}
       <h2 className="text-center fw-bold mb-5 text-light" data-aos="fade-down">Contact Me</h2>
       
       <div className="row justify-content-center align-items-center">
         
-        {/* === Left Side: Info + Animation === */}
         <div className="col-md-5 mb-4" data-aos="fade-right" style={{ marginTop: '40px' }}>
           
           <h3 className="fw-bold text-primary mb-3">Get in Touch</h3>
@@ -49,7 +47,6 @@ const Contact = () => {
           </p>
 
 
-         {/* Gmail Direct Link (100% Working) */}
           <a 
             href="https://mail.google.com/mail/?view=cm&fs=1&to=ajayajay2005vi@gmail.com"
             target="_blank"
@@ -77,7 +74,6 @@ const Contact = () => {
             </div>
           </a>
 
-          {/* ✨ Animation ✨ */}
           <div className="mt-5" style={{ marginLeft: '-180px' }}>
              <Lottie 
                 animationData={contactAnimation} 
@@ -89,8 +85,6 @@ const Contact = () => {
 
         </div>
 
-        {/* === Right Side: Form (Moved UP) === */}
-        {/* மாற்றம்: இங்கே marginTop: '-50px' சேர்த்துள்ளேன் */}
         <div className="col-md-6" data-aos="fade-left" style={{ marginTop: '-50px' }}> 
           <form ref={form} onSubmit={sendEmail} className="p-4 shadow rounded border border-secondary" style={{ background: 'rgba(255, 255, 255, 0.05)', backdropFilter: 'blur(5px)' }}>
             <div className="mb-3">

@@ -6,18 +6,14 @@ const Journey = () => {
   return (
     <section id="journey" className="container py-5">
       
-      {/* Heading (சாதாரணமாக நடுவில்) */}
       <h2 className="text-center fw-bold mb-5 text-light" data-aos="fade-down">My Journey</h2>
       
       <div className="row">
         
-        {/* === Left Side: Timeline (Journey) === */}
         <div className="col-md-7">
           
-          {/* Timeline Wrapper */}
           <div style={{ borderLeft: '3px solid #00d2ff', position: 'relative', marginLeft: '10px' }}>
 
-            {/* 1. Job Seeker */}
             <div className="mb-5 ms-4 position-relative" data-aos="fade-up">
               <div className="bg-primary rounded-circle position-absolute top-0 start-0 translate-middle" 
                    style={{ width: '20px', height: '20px', left: '-22px', border: '4px solid #0f2027' }}></div>
@@ -33,7 +29,6 @@ const Journey = () => {
               </div>
             </div>
 
-            {/* 2. Projects Phase */}
             <div className="mb-5 ms-4 position-relative" data-aos="fade-up">
               <div className="bg-success rounded-circle position-absolute top-0 start-0 translate-middle" 
                    style={{ width: '20px', height: '20px', left: '-22px', border: '4px solid #0f2027' }}></div>
@@ -49,7 +44,6 @@ const Journey = () => {
               </div>
             </div>
 
-            {/* 3. Learning Phase */}
             <div className="mb-5 ms-4 position-relative" data-aos="fade-up">
               <div className="bg-warning rounded-circle position-absolute top-0 start-0 translate-middle" 
                    style={{ width: '20px', height: '20px', left: '-22px', border: '4px solid #0f2027' }}></div>
@@ -65,7 +59,6 @@ const Journey = () => {
               </div>
             </div>
 
-            {/* 4. Graduation */}
             <div className="mb-5 ms-4 position-relative" data-aos="fade-up">
               <div className="bg-danger rounded-circle position-absolute top-0 start-0 translate-middle" 
                    style={{ width: '20px', height: '20px', left: '-22px', border: '4px solid #0f2027' }}></div>
@@ -84,13 +77,12 @@ const Journey = () => {
           </div>
         </div>
 
-        {/* === Right Side: Big Animation (Sticky) === */}
-        <div className="col-md-5 d-none d-md-block"> {/* மொபைலில் மறைந்துவிடும், லேப்டாப்பில் தெரியும் */}
+        <div className="col-md-5 d-none d-md-block"> 
           <div style={{ position: 'sticky', top: '150px' }}>
              <Lottie 
                 animationData={journeyAnimation} 
                 loop={true} 
-                style={{ width: '100%', maxWidth: '400px' }} // இப்போ பெருசா தெரியும்
+                style={{ width: '100%', maxWidth: '400px' }} 
              />
           </div>
         </div>

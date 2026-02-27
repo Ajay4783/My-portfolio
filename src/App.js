@@ -30,7 +30,6 @@ function App() {
 
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
-    // 2. நேரம்: 6 செகண்ட் கழித்து வெப்சைட் வரும்
     setTimeout(() => setLoading(false), 4500); 
   }, []);
 
@@ -39,14 +38,12 @@ if (loading) {
       <div className="d-flex flex-column justify-content-center align-items-center vh-100" 
            style={{ background: '#000000' }}>
         
-        {/* Animation */}
         <div style={{ width: '250px' }}>
           <Lottie animationData={loaderAnimation} loop={true} />
         </div>
 
-        {/* Typewriter Text Effect */}
         <h4 className="mt-4 fw-bold text-center" style={{ color: '#00d2ff', fontFamily: 'monospace', fontSize: '1.5rem' }}>
-          <span>&gt; </span> {/* Terminal Arrow */}
+          <span>&gt; </span> 
           <Typewriter
             words={['INITIALIZING...', 'WELCOME AJAY...']}
             loop={1}
@@ -65,7 +62,6 @@ if (loading) {
   return (
     <div className="App">
       
-      {/* Scroll Progress Bar */}
       <motion.div
         style={{
           scaleX: scrollYProgress,
@@ -81,7 +77,6 @@ if (loading) {
         }}
       />
 
-      {/* Magic Cursor */}
       <AnimatedCursor
         innerSize={8}
         outerSize={35}
@@ -92,7 +87,6 @@ if (loading) {
         clickables={['a', 'input', 'button', '.link']}
       />
 
-      {/* Background */}
       <ParticlesBackground />
 
       <MyNavbar />
@@ -106,7 +100,6 @@ if (loading) {
 
       <ToastContainer position="top-right" autoClose={3000} theme="colored" />
 
-      {/* Scroll to Top Button */}
       <button 
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         className="btn btn-primary rounded-circle position-fixed bottom-0 end-0 m-4 shadow-lg"
